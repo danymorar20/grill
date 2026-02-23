@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* ── Forced dark background — dashboard always renders in dark mode ─────── */
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: #020617; /* slate-950 */
+  color: #f8fafc;            /* slate-50  */
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Custom scrollbar for tables ────────────────────────────────────────── */
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; /* slate-900 */
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; /* slate-700 */
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b; /* amber-500 */
+}
+
+/* ── Range input track (cross-browser) ──────────────────────────────────── */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #334155;
+  border-radius: 9999px;
+  height: 0.5rem;
+}
+input[type="range"]::-moz-range-track {
+  background: #334155;
+  border-radius: 9999px;
+  height: 0.5rem;
+}

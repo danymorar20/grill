@@ -1,0 +1,167 @@
+import type { Insumo } from '@/app/types/grill';
+
+/**
+ * Inventario real de la asada — datos recabados por el usuario.
+ * Precios en MXN. Merma expresada como fracción (0–1).
+ *
+ * Fuente original: hoja de cálculo Excel → CSV.
+ */
+export const INVENTARIO_ASADA: Record<string, Insumo> = {
+  // ── Carnes ──────────────────────────────────────────────────────────────────
+  bistec_cerdo: {
+    id: 'bistec_cerdo',
+    categoria: 'Carne',
+    nombre: 'Bistec de Cerdo',
+    porcionPorPersona: 250,
+    unidad: 'g',
+    precioCompra: 120,
+    unidadCompra: 1000,
+    mermaCoccion: 0.3,
+  },
+  arrachera: {
+    id: 'arrachera',
+    categoria: 'Carne',
+    nombre: 'Arrachera',
+    porcionPorPersona: 200,
+    unidad: 'g',
+    precioCompra: 251,
+    unidadCompra: 600,
+    mermaCoccion: 0.4,
+  },
+  // ── Embutidos ───────────────────────────────────────────────────────────────
+  chorizo_arg: {
+    id: 'chorizo_arg',
+    categoria: 'Embutido',
+    nombre: 'Chorizo Argentino',
+    porcionPorPersona: 200,
+    unidad: 'g',
+    precioCompra: 118,
+    unidadCompra: 1000,
+    mermaCoccion: 0.15,
+  },
+  salchicha_asar: {
+    id: 'salchicha_asar',
+    categoria: 'Embutido',
+    nombre: 'Salchicha para asar',
+    porcionPorPersona: 400,
+    unidad: 'g',
+    precioCompra: 76,
+    unidadCompra: 800,
+    mermaCoccion: 0,
+  },
+  chistorra: {
+    id: 'chistorra',
+    categoria: 'Embutido',
+    nombre: 'Chistorra',
+    porcionPorPersona: 200,
+    unidad: 'g',
+    precioCompra: 114,
+    unidadCompra: 500,
+    mermaCoccion: 0.15,
+  },
+  // ── Verduras ────────────────────────────────────────────────────────────────
+  cebolla: {
+    id: 'cebolla',
+    categoria: 'Verdura',
+    nombre: 'Cebolla Blanca',
+    porcionPorPersona: 400,
+    unidad: 'g',
+    precioCompra: 29,
+    unidadCompra: 1000,
+    mermaCoccion: 0.15,
+  },
+  cebolla_cambray: {
+    id: 'cebolla_cambray',
+    categoria: 'Verdura',
+    nombre: 'Cebolla cambray',
+    porcionPorPersona: 4,
+    unidad: 'pza',
+    precioCompra: 13,
+    unidadCompra: 1,
+    mermaCoccion: 0,
+  },
+  cilantro: {
+    id: 'cilantro',
+    categoria: 'Verdura',
+    nombre: 'Cilantro',
+    porcionPorPersona: 1,
+    unidad: 'pza',
+    precioCompra: 11.9,
+    unidadCompra: 1,
+    mermaCoccion: 0,
+  },
+  // ── Frutas / Chiles ─────────────────────────────────────────────────────────
+  aguacate: {
+    id: 'aguacate',
+    categoria: 'Fruta',
+    nombre: 'Aguacate Hass',
+    porcionPorPersona: 400,
+    unidad: 'g',
+    precioCompra: 55,
+    unidadCompra: 1000,
+    mermaCoccion: 0,
+  },
+  chile_habanero: {
+    id: 'chile_habanero',
+    categoria: 'Fruta',
+    nombre: 'Chile habanero',
+    porcionPorPersona: 1,
+    unidad: 'pza',
+    precioCompra: 115,
+    unidadCompra: 50,
+    mermaCoccion: 0,
+  },
+  tomate: {
+    id: 'tomate',
+    categoria: 'Fruta',
+    nombre: 'Tomate saladet',
+    porcionPorPersona: 150,
+    unidad: 'g',
+    precioCompra: 30,
+    unidadCompra: 1000,
+    mermaCoccion: 0,
+  },
+  chile_jalapeno: {
+    id: 'chile_jalapeno',
+    categoria: 'Fruta',
+    nombre: 'Chile jalapeño',
+    porcionPorPersona: 100,
+    unidad: 'g',
+    precioCompra: 60,
+    unidadCompra: 1000,
+    mermaCoccion: 0,
+  },
+  // ── Complementos ────────────────────────────────────────────────────────────
+  tortilla: {
+    id: 'tortilla',
+    categoria: 'Complemento',
+    nombre: 'Tortilla blanca',
+    porcionPorPersona: 200,
+    unidad: 'g',
+    precioCompra: 15,
+    unidadCompra: 1000,
+    mermaCoccion: 0,
+  },
+  // ── Lácteos ─────────────────────────────────────────────────────────────────
+  queso: {
+    id: 'queso',
+    categoria: 'Lacteo',
+    nombre: 'Queso Chihuahua',
+    porcionPorPersona: 250,
+    unidad: 'g',
+    precioCompra: 259,
+    unidadCompra: 1000,
+    mermaCoccion: 0,
+  },
+  // ── Bebidas ─────────────────────────────────────────────────────────────────
+  refresco_cola: {
+    id: 'refresco_cola',
+    categoria: 'Bebida',
+    nombre: 'Coca Cola',
+    porcionPorPersona: 750,
+    unidad: 'ml',
+    precioCompra: 54,
+    unidadCompra: 3000,
+    mermaCoccion: 0,
+  },
+};
