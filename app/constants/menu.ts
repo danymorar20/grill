@@ -34,7 +34,7 @@ export const SECCIONES_MENU: SeccionMenu[] = [
     accentColor: 'orange',
     platillos: [
       { id: 'arrachera', nombre: 'Arrachera jugosa al carbón' },
-      { id: 'bisteces', nombre: 'Bisteces de res' },
+      { id: 'bisteces', nombre: 'Bisteces de cerdo' },
     ],
   },
   {
