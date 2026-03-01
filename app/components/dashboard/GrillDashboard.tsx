@@ -13,6 +13,7 @@ import { ControlRoom } from '@/app/components/dashboard/ControlRoom';
 import { KpiCards } from '@/app/components/dashboard/KpiCards';
 import { BudgetDonutChart } from '@/app/components/dashboard/BudgetDonutChart';
 import { ShoppingTable } from '@/app/components/dashboard/ShoppingTable';
+import { MenuCarneAsada } from '@/app/components/dashboard/MenuCarneAsada';
 
 export function GrillDashboard() {
   const {
@@ -62,7 +63,12 @@ export function GrillDashboard() {
         </div>
       </main>
 
-      <footer className="border-t border-slate-800 py-4 text-center text-xs text-slate-600">
+      {/* ── Festive menu section — visually breaks from the dark dashboard ── */}
+      <div className="mt-8 overflow-hidden rounded-t-3xl">
+        <MenuCarneAsada />
+      </div>
+
+      <footer className="bg-stone-50 border-t border-stone-200 py-4 text-center text-xs text-stone-400">
         Grill Dashboard · calculadora de insumos para carne asada 🔥
       </footer>
     </div>
